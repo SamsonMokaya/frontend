@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+*:focus {
+    outline: none;
+}
+body, html{
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Inter';
+}
+html{
+    scroll-behavior: smooth;
+}
+/* this is code for the home section */
+.navbar{
+    display: none;
+}
+.nav-and-search{
+    display: flex;
+    flex-direction: row;
+}
+#home nav{
+    margin-left: 10%;
+    padding-top: 5%;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+#home ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#home .home-rectangle{
+    padding: 15px 40px 15px 40px;
+    text-align: center;
+    background-image: linear-gradient(#D95204, #E68A54);
+    border-radius: 30px;
+    margin-top: 1%;
+}
+#home .home-rectangle li a{
+    font-size: 15px;
+}
+#home .rest{
+    display: flex;
+    flex-direction: row;
+}
+#home ul .rest li{
+    padding-top: 20px;
+    margin-left: 60px;
+}
+#home nav .rest a{
+    color: #000000;
+    font-size: 17px;
+}
+#home nav div li a{
+    color: #ffffff;
+    font-size: 20px;
+}
+#home .nav-and-search .search{
+    margin-left: 35%;
+    margin-top: 2%;
+}
+#home .nav-and-search .search i{
+    color: #D95204;
+    position: absolute;
+    margin-top: 1.4%;
+    margin-left: 1.2%;
+}
+#home .nav-and-search .search input{
+    padding: 10% 30% 10% 25%;
+    border: solid 2px;
+    border-color: #D95204;
+    border-radius: 30px;
+}
+#home .overall-content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+}
+#home .overall-content .words{
+    text-align: justify;
+    padding-left: 4%;
+    margin-top: 5%;
+    width: 50%;
+}
+#home .overall-content .words span.blue, 
+#services .header span.blue, 
+#about .header span.blue{
+    color: #04BF9D;
+}
+#home .overall-content .words h1{
+    font-size: 45px;
+}
+#home .overall-content .words p{
+    margin-top: 5%;
+    line-height: 40px;
+    width: 90%;
+}
+#home .overall-content .words button{
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+    background-image: linear-gradient(#04BF9D, #0E7361);
+    border-radius: 30px;
+    margin-top: 5%;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
+}
+#home .overall-content .words button a{
+    color: #ffffff;
+}
+#home .overall-content .content-image img{
+    width: 95%;
+}
+/* this is code for the services section */
+#services{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+#services .header, #about .header{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+#services .all-services{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10%;
+    margin-top: 3%;
+}
+#services .all-services #service{
+    padding: 10% 15% 25px 15%;
+    text-align: center;
+    border-radius: 40px;
+    height: 350px;
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25));
+}
+#services .all-services #service h5{
+    font-size: 19px;
+    margin-top: 15%;
+}
+#services .all-services .service-one h5, #services .all-services .service-three h5{
+    opacity: 66%;
+}
+#services .all-services .service-two h5{
+    color: #ffffff;
+}
+#services .all-services #service p{
+    text-align: justify;
+    margin-top: 3%;
+    line-height: 30px;
+    margin-top: 15%;
+    font-weight: 500;
+    color: #ffffff;
+}
+#services .all-services #service img{
+    width: 35%;
+    margin-top: 7%;
+}
+#services .all-services .service-one, #services .all-services .service-three{
+    background-image: linear-gradient(#04BF9D, #0E7361);
+}
+#services .all-services .service-two{
+    background-image: linear-gradient(#E68A54, #D95204);
+}
+#services .all-services .service-two{
+    margin-top: 25%;
+}
+#services .all-services .service-three{
+    margin-top: 55%;
+}
+/* this is code for the about section */
+#about{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+#about .header{
+    margin-top: 5%;
+}
+#about .about-content{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 7%;
+    margin-top: 3%;
+}
+#about .about-content .about-image{
+    width: 100%;
+}
+#about .about-content .about-image img{
+    width: 100%;
+}
+#about .about-content .about-words{
+   
+   text-align: justify;
+   line-height: 50px;
+   margin-top: 10%;
+}
